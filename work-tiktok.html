@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok &mdash; Teh Shin Yun</title>
+<meta name="description" content="Teh Shin Yun — cross-market creator ecosystem and product operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html"><span class="mark"></span><span data-i18n="brand">Shin Yun</span></a>
+  <div class="menu"><a href="index.html" data-sec="home" data-i18n="nav.home">Home</a><a href="index.html#work" data-sec="work" data-i18n="nav.work">work</a><a href="index.html#journey" data-sec="journey" data-i18n="nav.journey">journey</a><a href="index.html#lab" data-sec="lab" data-i18n="nav.lab">lab</a><a href="index.html#notes" data-sec="notes" data-i18n="nav.notes">notes</a></div>
+  <button class="btn" onclick="dropBadge()" data-i18n="nav.contact">Contact</button>
+  <div class="langbox">
+    <button class="langbtn" onclick="toggleLangMenu()" aria-haspopup="true"><span id="langLabel">EN</span> &#9662;</button>
+    <div class="langmenu" id="langMenu">
+      <button onclick="pickLang('en')">English</button>
+      <button onclick="pickLang('zh')">&#20013;&#25991;</button>
+      <button onclick="pickLang('ko')">&#54620;&#44397;&#50612;</button>
+    </div>
+  </div>
+</div></nav>
+<div class="wrap">
+  <div class="phead">
+    <div class="kicker" data-i18n="c1.kicker"></div>
+    <h1 data-i18n="c1.h1"></h1>
+    <p class="sub" data-i18n="c1.sub"></p>
+  </div>
+  <div class="overview"><div><b data-i18n="c1.o1l"></b><span data-i18n="c1.o1"></span></div><div><b data-i18n="c1.o2l"></b><span data-i18n="c1.o2"></span></div><div><b data-i18n="c1.o3l"></b><span data-i18n="c1.o3"></span></div><div><b data-i18n="c1.o4l"></b><span data-i18n="c1.o4"></span></div></div>
+  <div class="bignums"><div><span data-i18n="w1.n1"></span><span data-i18n="w1.l1"></span></div><div><span data-i18n="w1.n2"></span><span data-i18n="w1.l2"></span></div><div><span data-i18n="w1.n3"></span><span data-i18n="w1.l3"></span></div></div>
+  <div class="prose"><h2 data-i18n="c1.h2a"></h2><p data-i18n="c1.p1"></p></div><div class="block"><img src="assets/work/tiktok/v1.jpg" loading="lazy" data-i18n-alt="c1.v1" alt=""></div><div class="prose"><h2 data-i18n="c1.h2b"></h2><p data-i18n="c1.p2"></p></div><div class="prose"><h2 data-i18n="c1.h2c"></h2><p data-i18n="c1.p3"></p></div><div class="pull" data-i18n="c1.pull"></div><div class="block"><img src="assets/work/tiktok/v2.jpg" loading="lazy" data-i18n-alt="c1.v2" alt=""></div><div class="prose"><h2 data-i18n="c1.h2d"></h2><p data-i18n="c1.p4"></p></div><div class="prose"><h2 data-i18n="c1.h2e"></h2><p data-i18n="c1.p5"></p></div><div class="prose"><h2 data-i18n="c1.h2f"></h2><p data-i18n="c1.p6"></p></div>
+  <a class="backlink" href="index.html#work">&larr;&nbsp;<span data-i18n="case.back"></span></a>
+
+  <footer class="foot"><span data-i18n="foot.copy">&#169; 2026 Shin Yun.</span></footer>
+</div>
+<div class="veil" id="veil" onclick="closeBadge()">
+  <div class="hang" id="hang" onclick="event.stopPropagation()">
+    <div class="lany">CREATE &middot; CONNECT &middot; GROW</div>
+    <div class="clip"></div>
+    <div class="badge">
+      <div class="top"><span class="mark" style="width:15px;height:19px;border-width:1.2px"></span><span data-i18n="brand">Shin Yun</span></div>
+      <div class="ph-img"><img src="assets/avatar-badge.png" alt="Teh Shin Yun"></div>
+      <h3 data-i18n="badge.name">Teh Shin Yun</h3>
+      <p class="role"><span data-i18n="badge.r1"></span><br><span data-i18n="badge.r2"></span></p>
+      <div class="mail"><a href="mailto:shin.yun.9697@gmail.com">shin.yun.9697@gmail.com</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="lveil" id="lveil">
+  <div class="lcard">
+    <h3 data-i18n="lang.title">Choose a language</h3>
+    <p data-i18n="lang.desc"></p>
+    <div class="lopt">
+      <button onclick="pickLang('en')">English</button>
+      <button onclick="pickLang('zh')">&#20013;&#25991;</button>
+      <button onclick="pickLang('ko')">&#54620;&#44397;&#50612;</button>
+    </div>
+    <div class="lrow">
+      <button class="btn" onclick="pickLang('en')" data-i18n="lang.continue">Continue in English</button>
+      <button class="skip" onclick="pickLang('en')" data-i18n="lang.close">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
