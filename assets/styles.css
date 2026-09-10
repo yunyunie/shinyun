@@ -239,7 +239,7 @@ html[lang^="zh"] .hero .lede{max-width:17ch}
 /* ---------- 真实图片 ---------- */
 .sheet img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;cursor:zoom-in}
 .block img{width:100%;height:auto;border-radius:4px;cursor:zoom-in}
-.shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:zoom-in}
+.shot img{width:100%;height:auto;border-radius:4px;cursor:zoom-in}
 /* 人物视频直接落在页面背景上：无边框、无圆角、无阴影、无容器
    webm 带 alpha 通道；不支持的浏览器回落到 mp4，其底色与页面完全一致 */
 .figure video{width:100%;height:auto;display:block;background:transparent;
